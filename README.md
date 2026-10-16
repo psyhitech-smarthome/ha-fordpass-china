@@ -2,7 +2,7 @@
 
 独立的 Home Assistant 自定义集成，面向已绑定车辆的中国福特派车主。
 已在国产 2024 款烈马与 Home Assistant Core 2026.10.1 上验证。
-当前版本 **0.3.0**；并非福特官方项目。
+当前版本 **0.3.0**；由[心史科技 · 智能家居](https://github.com/psyhitech-smarthome)维护，并非福特官方项目。
 
 ## 已实现能力
 
