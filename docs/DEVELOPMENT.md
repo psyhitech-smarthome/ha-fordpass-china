@@ -9,11 +9,18 @@ cd ~/psyhitech/ha-fordpass-china
 git status --short --branch
 ```
 
-For the currently installed Home Assistant development environment:
+Create a dedicated development environment (separate from the running HA):
 
 ```sh
-~/ha-core/.venv-2026.10.1/bin/python scripts/check_protocol_sync.py
-~/ha-core/.venv-2026.10.1/bin/python -m unittest discover -s tests -v
+uv venv --python 3.14 .venv
+uv pip install --python .venv/bin/python -e . homeassistant==2026.10.1
+```
+
+Run the checks with that environment:
+
+```sh
+.venv/bin/python scripts/check_protocol_sync.py
+.venv/bin/python -m unittest discover -s tests -v
 git diff --check
 ```
 
@@ -33,5 +40,6 @@ entity availability and query timestamps through HA's API. Restore the backup
 if the updated integration fails to load. Private settings and native vendor
 files must not be overwritten from the source checkout.
 
-The old MacBook home-kiosk copy is retained only as historical material;
-it must not be used as an upstream source or synchronized over this repository.
+The MacBook source copy has been migrated off the laptop. Historical material
+and capture tools live in a separate private lab directory on mac-1, outside
+this public repository. Never copy those private files into Git.

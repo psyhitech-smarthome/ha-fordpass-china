@@ -4,8 +4,8 @@ The maintainer workspace for this project is on the home Mac mini, reached
 through the SSH alias `mac-1`, at `~/psyhitech/ha-fordpass-china`.
 
 - Perform project edits, tests, commits and pushes in that workspace.
-- A copy inside the separate home-kiosk repository on a MacBook is historical;
-  do not develop there or sync it over this repository.
+- The MacBook copy has been migrated off the laptop. Do not recreate a second
+  source workspace there. Historical research lives in a private mac-1 lab.
 - GitHub is the shared source history. The Home Assistant installed component
   is a deployment copy, not the source workspace.
 - Keep credentials, VINs, locations, captures, APKs, native vendor libraries,
