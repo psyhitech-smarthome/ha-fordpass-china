@@ -5,7 +5,7 @@ through the SSH alias `mac-1`, at `~/psyhitech/ha-fordpass-china`.
 
 - Perform project edits, tests, commits and pushes in that workspace.
 - The MacBook copy has been migrated off the laptop. Do not recreate a second
-  source workspace there. Historical research lives in a private mac-1 lab.
+  source workspace there. Only essential setup inputs and concise notes remain in a private mac-1 lab.
 - GitHub is the shared source history. The Home Assistant installed component
   is a deployment copy, not the source workspace.
 - Keep credentials, VINs, locations, captures, APKs, native vendor libraries,

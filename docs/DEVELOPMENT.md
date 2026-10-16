@@ -40,6 +40,7 @@ entity availability and query timestamps through HA's API. Restore the backup
 if the updated integration fails to load. Private settings and native vendor
 files must not be overwritten from the source checkout.
 
-The MacBook source copy has been migrated off the laptop. Historical material
-and capture tools live in a separate private lab directory on mac-1, outside
-this public repository. Never copy those private files into Git.
+The MacBook source copy has been migrated off the laptop. Essential setup inputs and optional capture tools live in a separate private
+lab directory on mac-1, outside this public repository. Generated reverse-
+engineering outputs and obsolete caches are discarded, not archived. Never
+copy private setup files into Git.
