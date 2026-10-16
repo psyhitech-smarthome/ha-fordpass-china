@@ -44,6 +44,8 @@ codec；APK 本身不在容器里运行。其他硬件、HA OS／Container 安�
    粘贴到 HA 表单。不要在 issue、聊天或日志中发布此 URL。
 5. 在 HA 中配置家庭位置；启用 LBS 后可显示距家估算及独立查询时间。
 
+开发维护流程见 [Mac mini 维护说明](docs/DEVELOPMENT.md)。
+
 ## 开发与验证
 
 ```sh
