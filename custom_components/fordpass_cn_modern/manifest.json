@@ -1,0 +1,9 @@
+{
+  "domain": "fordpass_cn_modern",
+  "name": "FordPass China Modern",
+  "version": "0.3.0",
+  "documentation": "https://www.ford.com.cn/fordpass/",
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "requirements": []
+}

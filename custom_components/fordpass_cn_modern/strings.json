@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect FordPass China",
+        "description": "Before continuing, review Ford's [Privacy Policy](https://www.ford.com.cn/privacy-policy/) and [FordPass Terms](https://www.fordpass.com.cn/content/ford_com/fp_app/zh_cn/terms-fordpass.html). Confirming sends the required consent flags to Ford's sign-in page; no additional consent is opted into.",
+        "data": {
+          "accept_terms": "I have read and accept Ford's privacy policy and service terms"
+        }
+      },
+      "authorize": {
+        "title": "Sign in to FordPass China",
+        "description": "Open the [Ford sign-in page]({login_url}) in a browser. After signing in, copy the complete final redirect URL and paste it below. Your Ford password stays on Ford's site.",
+        "data": {
+          "redirect_url": "Final redirect URL"
+        }
+      }
+    },
+    "error": {
+      "terms_required": "You must accept Ford's terms before opening the sign-in page",
+      "private_config_missing": "Private protocol configuration is missing or not private",
+      "cannot_connect": "Could not connect to Ford",
+      "invalid_auth": "Ford authorization failed or no vehicle was returned",
+      "token_exchange_failed": "Ford rejected the authorization-code exchange. Sign in again for a fresh code.",
+      "protocol_error": "Ford could not decrypt the integration's request (100500). Pause sign-in attempts while the protocol is corrected.",
+      "unexpected_response": "Ford returned an unexpected response"
+    },
+    "abort": {
+      "already_configured": "This vehicle is already configured",
+      "reauth_entry_missing": "The integration entry could not be found"
+    }
+  }
+}

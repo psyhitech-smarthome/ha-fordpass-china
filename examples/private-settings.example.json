@@ -1,0 +1,14 @@
+{
+  "sign_secret_key": "REPLACE_WITH_PRIVATE_R3_SECRET",
+  "sign_payload_key": "REPLACE_WITH_PRIVATE_R3_PAYLOAD",
+  "app_key": "REPLACE_WITH_PRIVATE_APP_KEY",
+  "codec_bearer": "REPLACE_WITH_YOUR_RANDOM_CODEC_BEARER",
+  "codec_url": "http://127.0.0.1:8766/codec",
+  "app_version": "6.14.0",
+  "client_type": "FP",
+  "os_type": "ios",
+  "brand": "FORD",
+  "lbs_secret_key": "",
+  "lbs_payload_key": "",
+  "lbs_application_id": ""
+}

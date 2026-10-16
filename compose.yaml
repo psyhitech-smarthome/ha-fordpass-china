@@ -1,0 +1,41 @@
+name: fordpass-cn-modern
+
+services:
+  codec:
+    build: ./codec_sidecar
+    image: fordpass-cn-modern-codec:local
+    network_mode: none
+    read_only: true
+    tmpfs:
+      - /tmp:exec,mode=0700
+    volumes:
+      - ./codec_sidecar/server.py:/app/server.py:ro
+      - ${FORD_VENDOR_DIR:?Set the private Ford vendor directory}:/vendor:ro
+      - socket:/socket
+    environment:
+      FORD_CODEC_BEARER: ${FORD_CODEC_BEARER:?Set the private codec bearer}
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+
+  relay:
+    image: python:3.13-slim-bookworm
+    command: ["python", "/app/relay.py"]
+    read_only: true
+    volumes:
+      - ./codec_sidecar/relay.py:/app/relay.py:ro
+      - socket:/socket
+    ports:
+      - "127.0.0.1:8766:8766"
+    depends_on:
+      - codec
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+
+volumes:
+  socket:

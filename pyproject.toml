@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fordpass-china-next"
+version = "0.3.0"
+description = "Owner-operated FordPass China protocol client and Home Assistant integration"
+requires-python = ">=3.11"
+dependencies = ["aiohttp>=3.9"]
+
+[tool.setuptools.packages.find]
+include = ["fordpass_china_next*"]
